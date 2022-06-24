@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-grafica1',
@@ -6,11 +6,46 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class Grafica1Component implements OnInit {
+export class Grafica1Component{
 
-  constructor() { }
+  chartData1 = {
+    labels: [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ],
+    datasets: [
+      { 
+        data: [ 350, 450, 100 ],
+        backgroundColor: ['#6857E6','#009FEE','#F02059']
+      },
+    ]
+  };
 
-  ngOnInit(): void {
-  }
+  chartData2 = {
+    labels: [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ],
+    datasets: [
+      { 
+        data: [ 350, 450, 100 ],
+        backgroundColor: ['#6857E6','#009FEE','#F02059']
+      },
+    ]
+  };
 
+  chartData3 = {
+    labels: [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ],
+    datasets: [
+      { 
+        data: [ 350, 450, 100 ],
+        backgroundColor: ['#6857E6','#009FEE','#F02059']
+      },
+    ]
+  };
+
+  chartData4 = {
+    labels: [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ],
+    datasets: [
+      { 
+        data: [ 350, 450, 100 ],
+        backgroundColor: ['#6857E6','#009FEE','#F02059']
+      },
+    ]
+  };
+  
 }
